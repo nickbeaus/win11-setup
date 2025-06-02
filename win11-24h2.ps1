@@ -685,4 +685,9 @@ if ($activateOffice) {
     Write-Host "You have chosen not to activate any products." -ForegroundColor Yellow
 }
 
-
+# Final message
+Write-Host "`n-----------------------------------------" -ForegroundColor Cyan
+Write-Host "All selected operations have been completed." -ForegroundColor Cyan
+Write-Host "Please restart your computer to apply all changes." -ForegroundColor Cyan
+Write-Host "-------------------------------------------" -ForegroundColor Cyan
+Read-Host "Press enter to close"
