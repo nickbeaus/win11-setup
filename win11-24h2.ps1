@@ -16,6 +16,9 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     exit
 }
 
+Clear-Host
+# Resize the console window
+$Host.UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.Size(100, 50)
 
 function Header {
     Write-Host "Windows Configuration Script" -ForegroundColor Cyan
